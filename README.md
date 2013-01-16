@@ -1,4 +1,3 @@
-sdi-2
+My Mobile Development Projects
 =====
 
-project 2
