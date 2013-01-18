@@ -36,12 +36,12 @@ var planFlight = function (startingDest, secondDest, thirdDest){
     return
 };
 var controlsTest = function (controls, numOfTest){
-    console.log("There are " + (controls.length + 1) + " different controls available, and we will test " + numOfTest + "of those controls.");
-    if (i = 0, i <numOfTest, i++ ){
+    console.log("There are " + controls.length + " different controls available, and we will test " + numOfTest + " of those controls.");
+    for (i = 0; i < numOfTest; i++){
         console.log("testing " + controls[i]);
-        return
-    }
-
+    };
+    console.log("Finished tesitng controls.");
+    return
 };
 
 
@@ -58,5 +58,6 @@ console.log("Fantastic, main rotor is good, let's reduce power back down to 40%.
 mainRotorSpeed = 40;
 console.log(mainRotorSpeed + " %, check.");
 var flightPlan = planFlight("Den", " Kitchen", " Bedroom");
-var controlTestResults = controlsTest(controls, 3);
+var controlTestResults = controlsTest(controls, 4);
+console.log("All checks clear, we are ready for take-off. Enjoy your flight.")
 
