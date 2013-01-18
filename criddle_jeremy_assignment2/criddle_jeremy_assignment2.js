@@ -1,34 +1,26 @@
 // Jeremy Criddle
 // SDI 1301
 // Project 2
-// theme
+// R/C Helicopter
 
 //set global variables
-
-//variables
-var mystring = "",
-    mynumber = 20,
-    myarray = ["Apprentice", "Journeyman", "Master"];
+var name = "S107",
+    numberOfFlights = 16,
+    controls = ["more throttle", "less throttle", "forward", "backwards", "rotate left", "rotate right"];
 
 //functions
-var myprocedure = function () {
-
+var isCharged = function (battery) {
+    if (battery > 20) {
+        console.log("Check, we have " + battery + "% battery")
+    } else {
+        console.log("The battery is low, please charge before flight.")
+    }
 };
-var myboolean = function(){
-
-};
-var mynumber1 = function(){
-
-};
-var mystring1 = function(){
-
+var conditions;
+conditions = function (windSpeed, windTolerence) {
+    if (windSpeed < windTolerence) {
+        console.log('Wind speed check is a go.");
+    }
+    else ("Perhaps you should wait for better wind conditions.");
 };
 
-var myarray1 = function(){
-
-};
-returned values
-
-
-myProcedure(5);
-console.log(log values);
