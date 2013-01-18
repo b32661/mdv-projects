@@ -31,11 +31,19 @@ var startRotor = function (rotorSpeed) {
         rotorSpeed += 10;
     } return rotorSpeed;
 };
-var flightPlan = function (startingDest, secondDest, thirdDest){
-    console.log("Our goal is to fly from " + startingDest + " to " + thirdDest + "and finally, back to where we started at the " + startingDest);
-
+var planFlight = function (startingDest, secondDest, thirdDest){
+    console.log( "We are going to fly from the " +startingDest + " to  the " + secondDest + " then to the " + thirdDest);
+    return
+};
+var controlsTest = function (controls, numOfTest){
+    console.log("There are " + (controls.length + 1) + " different controls available, and we will test " + numOfTest + "of those controls.");
+    if (i = 0, i <numOfTest, i++ ){
+        console.log("testing " + controls[i]);
+        return
+    }
 
 };
+
 
 // Main Code
 console.log("model " + name + " infrared helicopter, with " + flights + " successful flights completed, ready for pre-flight check.");
@@ -49,4 +57,6 @@ var mainRotorSpeed = startRotor(0);
 console.log("Fantastic, main rotor is good, let's reduce power back down to 40%.");
 mainRotorSpeed = 40;
 console.log(mainRotorSpeed + " %, check.");
+var flightPlan = planFlight("Den", " Kitchen", " Bedroom");
+var controlTestResults = controlsTest(controls, 3);
 
