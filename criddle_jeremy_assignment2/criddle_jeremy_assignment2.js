@@ -31,11 +31,13 @@ var startRotor = function (rotorSpeed) {
         rotorSpeed += 10;
     } return rotorSpeed;
 };
-var myString = function (){
+var flightPlan = function (startingDest, secondDest, thirdDest){
+    console.log("Our goal is to fly from " + startingDest + " to " + thirdDest + "and finally, back to where we started at the " + startingDest);
+
 
 };
-var
 
+// Main Code
 console.log("model " + name + " infrared helicopter, with " + flights + " successful flights completed, ready for pre-flight check.");
 console.log("Starting pre-flight check list");
 console.log('First up is the battery check.');
